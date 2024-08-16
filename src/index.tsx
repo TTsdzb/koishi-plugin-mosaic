@@ -2,7 +2,7 @@ import { Context, Schema } from "koishi";
 import {} from "koishi-plugin-canvas";
 
 export const name = "mosaic";
-export const inject = ["canvas"];
+export const inject = ["canvas", "puppeteer"];
 
 export interface Config {}
 
