@@ -2,6 +2,14 @@
   "name": "koishi-plugin-mosaic",
   "description": "适用于Koishi的头像马赛克插件",
   "version": "0.0.1",
+  "contributors": [
+    "TTsdzb <ttsdzb@outlook.com>"
+  ],
+  "homepage": "https://github.com/TTsdzb/koishi-plugin-mosaic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TTsdzb/koishi-plugin-mosaic.git"
+  },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -9,14 +17,31 @@
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
     "plugin"
   ],
-  "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.17.12"
+  },
+  "koishi": {
+    "description": {
+      "zh": "头像马赛克插件，仅用于娱乐。"
+    },
+    "service": {
+      "required": [
+        "canvas",
+        "puppeteer"
+      ],
+      "optional": [],
+      "implements": []
+    },
+    "locales": [
+      "zh"
+    ]
+  },
+  "devDependencies": {
+    "koishi-plugin-canvas": "^0.2.2"
   }
 }

@@ -1,0 +1,8 @@
+commands:
+  mosaic:
+    description: 生成头像马赛克图片。
+    usage: |-
+      在指令后指定目标即可。若没有指定，则生成自己的头像马赛克。
+    examples: |-
+      mosaic
+      mosaic @Alice
